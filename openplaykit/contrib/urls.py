@@ -14,6 +14,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
     (r'^admin/', include(admin.site.urls)),
-    url(r'^Client/', include('mimetos.urls')),
+    url(r'^Client/', include('openplaykit.urls')),
     (r'^$', TemplateView.as_view(template_name="home.html")),
 )
